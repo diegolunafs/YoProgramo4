@@ -19,6 +19,13 @@ import { EditHardysoftskillComponent } from './hardysoftskill/edit-hardysoftskil
 import { NewHardysoftskillComponent } from './hardysoftskill/new-hardysoftskill.component';
 import { EditProyectosComponent } from './proyectos/edit-proyectos.component';
 import { NewProyectosComponent } from './proyectos/new-proyectos.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { NgCircleProgressModule } from 'ng-circle-progress';
+import { AppRoutingModule } from './app-routing.module';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideStorage,getStorage } from '@angular/fire/storage';
 
 @NgModule({
   declarations: [
@@ -43,7 +50,13 @@ import { NewProyectosComponent } from './proyectos/new-proyectos.component';
     NewProyectosComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    HttpClientModule,
+    NgCircleProgressModule.forRoot({}),
+    AppRoutingModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideStorage(() => getStorage())
   ],
   providers: [],
   bootstrap: [AppComponent]
