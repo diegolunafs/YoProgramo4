@@ -1,0 +1,20 @@
+<div class="container" *ngIf="estudios">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title"><strong>Modificando Estudio</strong></h5>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombreEs">Estudio</label>
+                    <input type="text" class="form-control" id="nombreEs" name="nombreEs" [(ngModel)]="estudios.nombreEs" required />
+                </div>
+                <div class="form-group">
+                    <label for="descripcionEs">Descripción</label>
+                    <input type="text" class="form-control" id="descripcionEs" name="descripcionEs" [(ngModel)]="estudios.descripcionEs" required />
+                </div>
+                <div class="boton">
+                    <button  class="btn btn-success" type="submit">Actualizar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

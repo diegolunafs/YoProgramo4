@@ -1,0 +1,31 @@
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+.card-title {
+    padding: 5px;
+}
+
+.card {
+    max-width: 100%;
+    width: 600px;
+    height: auto;
+    margin-top: 5%;
+    border-radius: 5%;
+    box-shadow: 1px 1px 1px grey;
+    background-image: linear-gradient(to bottom right, #b7c6d6c0, #a1b5cb09);
+}
+
+.btn {
+    box-shadow: 2px 2px 2px grey;
+}
+
+.boton {
+    margin: 20px;
+    float: right;
+}

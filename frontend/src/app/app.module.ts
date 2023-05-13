@@ -11,6 +11,8 @@ import { HardysoftskillComponent } from './hardysoftskill/hardysoftskill.compone
 import { ProyectosComponent } from './proyectos/proyectos.component';
 import { FooterComponent } from './footer/footer.component';
 import { EditAcercademiComponent } from './acercademi/edit-acercademi.component';
+import { NewEstudioComponent } from './estudios/new-estudio.component';
+import { EditEstudioComponent } from './estudios/edit-estudio.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { EditAcercademiComponent } from './acercademi/edit-acercademi.component'
     HardysoftskillComponent,
     ProyectosComponent,
     FooterComponent,
-    EditAcercademiComponent
+    EditAcercademiComponent,
+    NewEstudioComponent,
+    EditEstudioComponent
   ],
   imports: [
     BrowserModule

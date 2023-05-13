@@ -1,1 +1,47 @@
-<p>estudios works!</p>
+<div class="container">
+    <div class="head" >
+        <div><h1>Estudios</h1></div>
+        <div class="agregar"><button type="button" class="btn btn-primary right-btn btnAgregar" data-toggle="button" aria-pressed="false" routerLink="/newestudio" *ngIf="isLogged">
+            <i class="bi bi-plus-circle-fill"></i> Añadir
+        </button>
+        </div>
+    </div>
+    <div>
+        <table class="table">
+            <tbody *ngFor="let estudio of estudios.reverse()">
+                <tr>
+                    <td>
+                        <div class="row" *ngIf="isLogged">
+                            <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 d-flex align-items-center">
+                                <div>
+                                    <h3><strong>- {{estudio.nombreEs}}</strong></h3>
+                                    <p>{{estudio.descripcionEs}}</p>
+                                </div>
+                            </div>
+                            
+                            <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+                                <div class="text-center">
+                                    <button type="button" class="btn btn-success boton" data-toggle="button" aria-pressed="false"
+                                        routerLink="/editestudio/{{estudio.id}}" *ngIf="isLogged"> <i
+                                            class="bi bi-pencil-fill"></i> </button>
+                                    <button type="button" class="btn btn-danger boton" *ngIf="isLogged"
+                                        (click)="delete(estudio.id)">
+                                        <i class="bi bi-trash-fill"></i> </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" *ngIf="!isLogged">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 d-flex align-items-center">
+                                <div>
+                                    <h3><strong>- {{estudio.nombreEs}}</strong></h3>
+                                    <p>{{estudio.descripcionEs}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
