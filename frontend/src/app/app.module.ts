@@ -17,6 +17,8 @@ import { EditExperienciaLaboralComponent } from './experiencia-laboral/edit-expe
 import { NewExperienciaLaboralComponent } from './experiencia-laboral/new-experiencia-laboral.component';
 import { EditHardysoftskillComponent } from './hardysoftskill/edit-hardysoftskill.component';
 import { NewHardysoftskillComponent } from './hardysoftskill/new-hardysoftskill.component';
+import { EditProyectosComponent } from './proyectos/edit-proyectos.component';
+import { NewProyectosComponent } from './proyectos/new-proyectos.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { NewHardysoftskillComponent } from './hardysoftskill/new-hardysoftskill.
     EditExperienciaLaboralComponent,
     NewExperienciaLaboralComponent,
     EditHardysoftskillComponent,
-    NewHardysoftskillComponent
+    NewHardysoftskillComponent,
+    EditProyectosComponent,
+    NewProyectosComponent
   ],
   imports: [
     BrowserModule

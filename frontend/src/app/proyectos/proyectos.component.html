@@ -1,1 +1,55 @@
-<p>proyectos works!</p>
+<div class="container">
+    <div class="head">
+        <div>
+            <h1>Proyectos</h1>
+        </div>
+        <div class="agregar"><button type="button" class="btn btn-primary right-btn btnAgregar" data-toggle="button"
+                aria-pressed="false" routerLink="/newproyecto" *ngIf="isLogged">
+                <i class="bi bi-plus-circle-fill"></i> Añadir
+            </button>
+        </div>
+    </div>
+    <table class="table">
+        <tbody>
+            <tr *ngFor="let proyecto of proyectos">
+                <td>
+                    <div class="row" *ngIf="isLogged">
+                        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 d-flex align-items-center">
+                            <div>
+                                <h3><strong>{{proyecto.nombre}}</strong></h3>
+                                <p>{{proyecto.descripcion}}</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 centrar">
+                            <div>
+                                <img src="{{proyecto.img}}">
+                                
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1 centrar">
+                            <div>
+                                <button type="button" class="btn btn-success boton" data-toggle="button" aria-pressed="false" routerLink="/editproyecto/{{proyecto.id}}" *ngIf="isLogged"> <i class="bi bi-pencil-fill"></i> </button>
+                                <button type="button" class="btn btn-danger boton" *ngIf="isLogged" (click)="delete(proyecto.id)"><i class="bi bi-trash-fill"></i> </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" *ngIf="!isLogged">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 d-flex align-items-center">
+                            <div>
+                                <h3><strong>{{proyecto.nombre}}</strong></h3>
+                                <p>{{proyecto.descripcion}}</p>
+                            </div>
+                        </div>
+                        <div
+                            class="col-xs-12 col-sm-12 col-md-6 col-lg-6 centrar">
+                            <div>
+                                <img src="{{proyecto.img}}">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
