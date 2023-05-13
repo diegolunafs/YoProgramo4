@@ -13,6 +13,8 @@ import { FooterComponent } from './footer/footer.component';
 import { EditAcercademiComponent } from './acercademi/edit-acercademi.component';
 import { NewEstudioComponent } from './estudios/new-estudio.component';
 import { EditEstudioComponent } from './estudios/edit-estudio.component';
+import { EditExperienciaLaboralComponent } from './experiencia-laboral/edit-experiencia-laboral.component';
+import { NewExperienciaLaboralComponent } from './experiencia-laboral/new-experiencia-laboral.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { EditEstudioComponent } from './estudios/edit-estudio.component';
     FooterComponent,
     EditAcercademiComponent,
     NewEstudioComponent,
-    EditEstudioComponent
+    EditEstudioComponent,
+    EditExperienciaLaboralComponent,
+    NewExperienciaLaboralComponent
   ],
   imports: [
     BrowserModule
