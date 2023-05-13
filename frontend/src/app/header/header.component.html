@@ -1,1 +1,24 @@
-<p>header works!</p>
+<div class="container">
+    <div class="row">     
+            <div class="item" style="text-align: left;">
+                <img class="logoAP" src="../../../assets/APLogo.png">
+            </div>
+            <div class="item iconos">
+                <a href="" > <img class="icon" src="../assets/linkedin.png" > </a>
+                <a href="" > <img class="icon" src="../assets/facebook.png" alt="Facebook"> </a>
+                <a href="" > <img class="icon" src="../assets/twitter.png"> </a>
+                <a href="" > <img class="icon" src="../assets/instagram.png"> </a>
+                <a href="" > <img class="icon" src="../assets/github.png"> </a>
+            </div>
+            <div class="item" style="text-align: right;">
+                <button type="button" class="btn" (click)="login()" *ngIf="!isLogged" title="Iniciar Sesión"><i class="bi bi-person-fill-lock log"></i></button>
+                <button type="button" class="btn" (click)="onLogOut()" *ngIf="isLogged" title="Cerrar Sesión"><i class="bi bi-person-x-fill log"></i></button>
+            </div>           
+    </div>
+    <div class="banner">
+        <img class="img-banner" src="../../../assets/banner.jpg" alt="" >
+    </div>
+    <div>
+        <app-acercademi></app-acercademi>
+    </div>
+</div>

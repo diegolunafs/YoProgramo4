@@ -1,0 +1,74 @@
+.container{
+    margin: 0px;
+    padding: 0px;
+    max-width: 100%;
+    border: 3px solid black;
+    border-radius: 7px;
+    border-bottom-left-radius: 7px;
+    background-color: #416790e4;
+}
+
+.row{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+} 
+
+.iconos{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+}
+
+.icon{
+    max-width: 100%;
+    width: 30px;
+    margin-left: 5px; 
+}
+
+.logoAP{
+    max-width: 100%;
+    width: 150px;
+    margin-left: 5px;
+    margin-left: 5px;
+}
+
+.btn{
+    width: 80px;
+    height: 40px;
+    background: #a1b5cb83;
+    border-radius: 5px;
+    border: 1px solid black;
+    color: white;
+    font-size: 24px;
+    font-family: 'Century Gothic', sans-serif;
+    box-shadow: 1px 1px 1px black;
+}
+
+.log{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item{
+    display: inline;
+    max-width: 33.3%;
+   
+}
+
+.banner{
+    display: block;
+    margin:auto;
+    background-color: #b7c6d6;
+}
+
+.img-banner{
+    width: 100%;
+    display: block;
+    margin:auto;
+}
