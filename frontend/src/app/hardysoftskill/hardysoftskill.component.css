@@ -1,0 +1,52 @@
+.container{
+    margin: 0px;
+    padding: 0px;
+    max-width: 100%;
+    border: 3px solid black;
+    border-radius: 7px;
+    border-bottom-left-radius: 7px;
+    background-color: #a1b5cb83;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #416790a9;
+    border-bottom: 1px solid black;
+    padding-left: 15px;
+}
+
+.circle{
+    padding: 5px;
+    position: relative;
+    text-align: center;
+}
+
+.boton{
+    margin: 2px;
+    border: 1px solid grey;
+    box-shadow: 2px 2px 2px grey;
+}
+
+.agregar {
+    padding-right: 20px;
+}
+
+.btnAgregar {
+    box-shadow: 2px 2px 2px black;
+}
+
+@media (min-width: 992px){
+    .col-lg-2{
+        flex: 0 0 auto;
+        width: 33.33333333%;
+    }
+}
+
+@media (min-width: 1300px){
+    .col-lg-2{
+        flex: 0 0 auto;
+        width: 16.66666667%;
+    }
+}
