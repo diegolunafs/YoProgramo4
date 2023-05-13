@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
 import { AcercademiComponent } from './acercademi/acercademi.component';
 import { HomeComponent } from './home/home.component';
@@ -11,6 +10,7 @@ import { ExperienciaLaboralComponent } from './experiencia-laboral/experiencia-l
 import { HardysoftskillComponent } from './hardysoftskill/hardysoftskill.component';
 import { ProyectosComponent } from './proyectos/proyectos.component';
 import { FooterComponent } from './footer/footer.component';
+import { EditAcercademiComponent } from './acercademi/edit-acercademi.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +23,8 @@ import { FooterComponent } from './footer/footer.component';
     ExperienciaLaboralComponent,
     HardysoftskillComponent,
     ProyectosComponent,
-    FooterComponent
+    FooterComponent,
+    EditAcercademiComponent
   ],
   imports: [
     BrowserModule
