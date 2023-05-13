@@ -1,0 +1,15 @@
+.gradient-custom {
+    width:100%;
+    /* fallback for old browsers */
+    background: #a1b5cb83;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, #a1b5cb83, #416790e4);
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #a1b5cb83, #416790e4)
+}
+
+#width{
+    max-width: 100%;
+}
