@@ -11,9 +11,10 @@ import { NewHardysoftskillComponent } from './hardysoftskill/new-hardysoftskill.
 import { EditHardysoftskillComponent } from './hardysoftskill/edit-hardysoftskill.component';
 import { NewProyectosComponent } from './proyectos/new-proyectos.component';
 import { EditProyectosComponent } from './proyectos/edit-proyectos.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-    {path: '', component: HeaderComponent},
+    {path: '', component: HomeComponent},
     {path: 'login', component: LoginComponent},
     {path: 'editacercademi/:id', component: EditAcercademiComponent},
     {path: 'newestudio', component: NewEstudioComponent},

@@ -10,7 +10,7 @@ import { TokenService } from '../service/token.service';
 })
 export class EstudiosComponent implements OnInit{
   estudios: Estudios[] = []
-  isLogged = false
+  isLogged = true
 
   constructor(private sEstudios: EstudiosService, private tokenService: TokenService) { }  
 
