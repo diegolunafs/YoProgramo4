@@ -29,7 +29,7 @@
                         <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1 centrar">
                             <div>
                                 <button type="button" class="btn btn-success boton" data-toggle="button" aria-pressed="false" routerLink="/editproyecto/{{proyecto.id}}" *ngIf="isLogged"> <i class="bi bi-pencil-fill"></i> </button>
-                                <!-- <button type="button" class="btn btn-danger boton" *ngIf="isLogged" (click)="delete(proyecto.id)"><i class="bi bi-trash-fill"></i> </button> -->
+                                <button type="button" class="btn btn-danger boton" *ngIf="isLogged" (click)="proyecto.id !== undefined ? delete(proyecto.id) : null"><i class="bi bi-trash-fill"></i> </button>
                             </div>
                         </div>
                     </div>
